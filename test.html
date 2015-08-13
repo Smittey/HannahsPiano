@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title> - jsFiddle demo</title>
+  
+  
+  <script type='text/javascript' src='//code.jquery.com/jquery-1.9.1.js'></script>
+  
+  
+  
+  
+  <script type="text/javascript" src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+  <link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css">
+  
+  <link rel="stylesheet" type="text/css" href="css/tabstest1.css">
+  
+  
+
+
+
+<script type='text/javascript'>
+
+$(function() {
+    $('#nav').find('a').click(function(e) {
+        e.preventDefault();
+        $(this.hash).show().siblings().hide();
+    }).filter(':first').click();
+});
+</script>
+
+</head>
+<body>
+
+<!-- the tabs --> 
+<ul id="nav">
+    <li><a href="#part-1">Partie 1</a></li>
+    <li><a href="#part-2">Partie 2</a></li>
+    <li><a href="#part-3">Partie 3</a></li>
+</ul>
+<div id="content">
+    <div id="part-1">
+        Ma première partie
+    </div>
+    <div id="part-2">
+        Ma deuxième partie
+    </div>
+    <div id="part-3">
+        Ma troisième partie
+    </div>
+</div>
+</body>
+
+</html>
+
