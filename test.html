@@ -1,55 +1,90 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-  <title> - jsFiddle demo</title>
-  
-  
-  <script type='text/javascript' src='//code.jquery.com/jquery-1.9.1.js'></script>
-  
-  
-  
-  
-  <script type="text/javascript" src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
-  <link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css">
-  
-  <link rel="stylesheet" type="text/css" href="css/tabstest1.css">
-  
-  
-
-
-
-<script type='text/javascript'>
-
-$(function() {
-    $('#nav').find('a').click(function(e) {
-        e.preventDefault();
-        $(this.hash).show().siblings().hide();
-    }).filter(':first').click();
-});
-</script>
-
+<meta charset="UTF-8">
+<title>Example of Bootstrap 3 Accordion</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<style type="text/css">
+    .bs-example{
+    	margin: 20px;
+    }
+</style>
 </head>
 <body>
-
-<!-- the tabs --> 
-<ul id="nav">
-    <li><a href="#part-1">Partie 1</a></li>
-    <li><a href="#part-2">Partie 2</a></li>
-    <li><a href="#part-3">Partie 3</a></li>
-</ul>
-<div id="content">
-    <div id="part-1">
-        Ma première partie
-    </div>
-    <div id="part-2">
-        Ma deuxième partie
-    </div>
-    <div id="part-3">
-        Ma troisième partie
+<div class="bs-example">
+    <div class="panel-group" id="accordion" style="width:40%">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"><h4 class="panel-title">
+                    15-20 minute taster session
+                </h4></a>
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse in">
+                <div class="panel-body">
+                    <p>FREE!</p>
+                </div>
+            </div>
+        </div>
+		
+		
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"><h4 class="panel-title">
+                    Tiny Pianists (under 5's)
+                </h4></a>
+            </div>
+            <div id="collapseTwo" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <p>£12/20 minutes</p>
+                </div>
+            </div>
+        </div>
+		
+		
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree"><h4 class="panel-title">
+                    Piano beginner to intermediate
+                </h4></a>
+            </div>
+            <div id="collapseThree" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <p>£30/hour        £20/30 minutes</p>
+                </div>
+            </div>
+        </div>
+		
+		
+		<div class="panel panel-default">
+            <div class="panel-heading">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour"><h4 class="panel-title">
+                    Music Theory grades 1-3
+                </h4></a>
+            </div>
+            <div id="collapseFour" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <p>£30/hour        £20/30 minutes</p>
+                </div>
+            </div>
+        </div>
+		
+		
+		<div class="panel panel-default">
+            <div class="panel-heading">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapseFive"><h4 class="panel-title">
+                    Music Theory grades 4 & 5
+                </h4></a>
+            </div>
+            <div id="collapseFive" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <p>£40/hour        £25/30 minutes</p>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 </body>
-
-</html>
-
+</html>                                		                                		
