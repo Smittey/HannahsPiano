@@ -551,6 +551,8 @@ aside.clients img{
     margin-bottom: 5px;
     padding: 5px 10px;
     border-radius: 4px;
+	    overflow:auto;
+
 
 }
 
