@@ -11,7 +11,7 @@ body {
 }
 
 body {
-    font-family: Merriweather,'Helvetica Neue',Arial,sans-serif;
+    /*font-family: Merriweather,'Helvetica Neue',Arial,sans-serif;*/
 }
 
 hr {
@@ -62,6 +62,7 @@ p {
 
 .text-faded {
     color: rgba(255,255,255,.7);
+	text-align:left;
 }
 
 section {
@@ -245,6 +246,7 @@ header .header-content .header-content-inner p {
 
 .section-heading {
     margin-top: 0;
+	text-align:center;
 }
 
 .service-box {
@@ -558,4 +560,34 @@ aside.clients img{
 
 .first {
     border-top:thin solid #cecece;    
+}
+
+#about .container .row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+}
+
+
+
+ul.qualifications-list {
+    /*background: #ccc;*/
+    height: 346px;
+	min-height: 100%;
+    display: table;
+}
+
+ul.qualifications-list li {
+    /*background: green;*/
+    display: table-row;
+	font-size: 17px;
+}
+
+ul.qualifications-list li:before {
+  content: "\f00c"; /* FontAwesome Unicode */
+  font-family: FontAwesome;
+  display: inline-block;
+  margin-left: -1.3em; /* same as padding-left set on li */
+  width: 2em; /* same as padding-left set on li */
 }
