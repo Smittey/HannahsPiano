@@ -591,3 +591,18 @@ ul.qualifications-list li:before {
   margin-left: -1.3em; /* same as padding-left set on li */
   width: 2em; /* same as padding-left set on li */
 }
+
+
+a.aboutMeLink {
+    color: #ffffff;
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    transition: all .35s;
+}
+
+a.aboutMeLink:hover,
+a.aboutMeLink:focus {
+    color: #442119;
+	text-decoration:none;
+
+}
