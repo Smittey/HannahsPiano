@@ -66,7 +66,7 @@ p {
 }
 
 section {
-    padding: 100px 0;
+    padding: 100px 0 100px 0;
 }
 
 aside {
@@ -569,7 +569,10 @@ aside.clients img{
   display:         flex;
 }
 
-
+.aside {
+	margin: 0;
+	padding: 0;
+}
 
 ul.qualifications-list {
     /*background: #ccc;*/
@@ -590,4 +593,137 @@ ul.qualifications-list li:before {
   display: inline-block;
   margin-left: -1.3em; /* same as padding-left set on li */
   width: 2em; /* same as padding-left set on li */
+}
+
+
+a.aboutMeLink {
+    color: #ffffff;
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    transition: all .35s;
+}
+
+a.aboutMeLink:hover,
+a.aboutMeLink:focus {
+    color: #442119;
+	text-decoration:none;
+
+}
+
+
+#contact-details {
+	padding: 50px 0 0 0;
+}
+
+#contact-form {
+	width:50%;
+	margin:0 auto;
+	padding-top: 50px;
+}
+
+.floating-label-form-group {
+	font-size: 14px;
+	position: relative;
+	margin-bottom: 0;
+	padding-bottom: 0.5em;
+}
+
+.floating-label-form-group input,
+.floating-label-form-group textarea {
+	z-index: 1;
+	position: relative;
+	padding-right: 0;
+	padding-left: 0;
+	border-radius: 0;
+	font-size: 1.5em;
+	background: none;
+	box-shadow: none !important;
+	resize: none;
+	color: #777;
+		border: 1px solid #ddd;
+		padding:20px;
+
+}
+
+.floating-label-form-group input:focus,
+.floating-label-form-group textarea:focus {
+	z-index: 1;
+	position: relative;
+	padding-right: 0;
+	padding-left: 0;
+	border-radius: 0;
+	font-size: 1.5em;
+	background: none;
+	box-shadow: none !important;
+	resize: none;
+	color: #777;
+		border: 1px solid #f05f40;
+		padding:20px;
+
+}
+
+.floating-label-form-group label {
+	display: block;
+	z-index: 0;
+	position: relative;
+	color: #777;
+	top: 2em;
+	margin: 0;
+	font-size: 0.85em;
+	line-height: 1.764705882em;
+	vertical-align: middle;
+	vertical-align: baseline;
+	opacity: 0;
+	text-align:left;
+	-webkit-transition: top 0.3s ease,opacity 0.3s ease;
+	-moz-transition: top 0.3s ease,opacity 0.3s ease;
+	-ms-transition: top 0.3s ease,opacity 0.3s ease;
+	transition: top 0.3s ease,opacity 0.3s ease;
+}
+
+.floating-label-form-group::not(:first-child) {
+	padding-left: 14px;
+	border-left: 1px solid #eeeeee;
+}
+
+.floating-label-form-group-with-value label {
+	top: 0;
+	opacity: 1;
+}
+
+.floating-label-form-group-with-focus label {
+	color: #f05f40;
+	
+}
+form .row:first-child .floating-label-form-group {
+  border-top: 1px solid #eeeeee;
+}
+
+.btn {
+
+	padding: 15px 25px;
+	border: 1px solid #f05f40;
+}	
+
+
+.btn-lg {
+	font-size: 16px;
+	padding: 25px 35px;
+}
+
+.btn-default:hover,
+.btn-default:focus {
+	background-color: #f05f40;
+	border: 1px solid #f05f40;
+	color: white;
+}
+
+
+/*Stop the autofill setting the background to yellow*/
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-transition-delay: 9999s;
+    -webkit-transition: color 9999s ease-out, background-color 9999s ease-out;
 }
